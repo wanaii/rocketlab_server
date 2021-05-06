@@ -1,0 +1,1843 @@
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+app.py:47: DeprecationWarning: count is deprecated. Use Collection.count_documents instead.
+  if USER_DB.find({'username': username, 'password': password}).count() == 0:
+121.200.5.78 - - [04/May/2021 12:29:16] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 12:29:18] "[37mPOST /login HTTP/1.1[0m" 200 -
+app.py:33: DeprecationWarning: count is deprecated. Use Collection.count_documents instead.
+  if USER_DB.find({'username': username}).count() == 0:
+121.200.5.78 - - [04/May/2021 12:29:22] "[37mPOST /signup HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 12:30:00] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 12:30:22] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 12:31:35] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 12:33:41] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 12:34:25] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 12:34:28] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 12:34:33] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 12:34:55] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 12:35:00] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 12:35:04] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 12:35:10] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 12:41:06] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 12:45:14] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 12:45:17] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 12:47:58] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 12:48:01] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 12:48:03] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 12:48:04] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 12:48:05] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 12:48:05] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 12:48:06] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 12:48:07] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 12:48:08] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 12:52:16] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 12:52:17] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 12:52:18] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 12:52:19] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 12:52:20] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 12:52:20] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 12:52:21] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 12:52:21] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 12:52:21] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 12:52:21] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 12:52:21] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 12:52:33] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 12:52:34] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 12:52:34] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 12:52:49] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 12:52:50] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 12:52:50] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 12:52:51] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 12:52:51] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 12:53:05] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 12:53:06] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 12:53:07] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 12:53:07] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 12:53:08] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 12:53:08] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 12:53:08] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 12:53:08] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 12:53:14] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 12:53:15] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 12:53:18] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 12:53:18] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 12:53:19] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 12:53:19] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 12:53:19] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 12:53:19] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 12:56:47] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 12:56:50] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 12:56:52] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 12:56:53] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 12:56:56] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 12:57:04] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 12:57:06] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 12:57:07] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 13:17:09] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 13:17:13] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 13:17:14] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 13:17:20] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 13:17:21] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 13:17:22] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 13:17:22] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 13:17:22] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 13:17:22] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 13:17:24] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 13:17:28] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 13:17:29] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 13:17:29] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 13:17:32] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 13:17:39] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 13:17:41] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 13:17:42] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 13:17:42] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 13:17:43] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 13:26:16] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 13:26:17] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 13:26:17] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 13:26:17] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 13:26:17] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 13:26:18] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 13:26:18] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 13:26:18] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 13:26:18] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 13:26:18] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 13:26:19] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 13:26:19] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 13:26:19] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 13:27:16] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 13:27:17] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 13:27:17] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 13:27:17] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 13:27:18] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 13:34:31] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 13:41:52] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 13:42:03] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 13:42:06] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 13:51:27] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 13:51:31] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 13:51:37] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 13:53:26] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 13:53:27] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 13:53:29] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 13:53:30] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 13:54:00] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 13:54:27] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 13:56:13] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 13:56:21] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 13:57:41] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 14:01:41] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 14:01:50] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 14:01:56] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 14:40:16] "[37mPOST /signup HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 14:40:45] "[37mPOST /signup HTTP/1.1[0m" 200 -
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+app.py:53: DeprecationWarning: count is deprecated. Use Collection.count_documents instead.
+  if USER_DB.find({'username': username, 'password': password}).count() == 0:
+121.200.5.78 - - [04/May/2021 15:06:56] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 15:14:18] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 15:35:35] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 15:45:35] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 16:55:15] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 17:05:55] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 17:16:31] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 17:22:02] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 17:30:18] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 17:37:34] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 17:38:21] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 17:38:52] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 17:55:34] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 18:06:50] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 18:07:20] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [04/May/2021 18:27:47] "[37mPOST /login HTTP/1.1[0m" 200 -
+162.142.125.54 - - [04/May/2021 23:12:12] code 400, message Bad request version ('À\x14À')
+162.142.125.54 - - [04/May/2021 23:12:12] "[35m[1m {  w8Ç ô|OLÞ:8¥¯ý¯éøo£ Ó p3®NyÐ¾·y  À/À+ÀÀÀÀ	ÀÀ[0m" HTTPStatus.BAD_REQUEST -
+162.142.125.54 - - [04/May/2021 23:12:13] "[37mGET / HTTP/1.1[0m" 200 -
+162.142.125.54 - - [04/May/2021 23:12:14] "[37mGET / HTTP/1.1[0m" 200 -
+209.17.97.98 - - [04/May/2021 23:24:20] "[37mGET / HTTP/1.0[0m" 200 -
+app.py:33: DeprecationWarning: count is deprecated. Use Collection.count_documents instead.
+  if USER_DB.find({'username': username}).count() == 0:
+121.200.5.78 - - [05/May/2021 00:57:36] "[37mPOST /signup HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 01:25:03] "[37mPOST /login HTTP/1.1[0m" 200 -
+162.142.125.54 - - [05/May/2021 01:25:10] code 400, message Bad request version ('À\x14À')
+162.142.125.54 - - [05/May/2021 01:25:10] "[35m[1m {  wq{ñÿ¿RÍ½È¼[¦¿lº]ùd<J¯újÆ  À/À+ÀÀÀÀ	ÀÀ[0m" HTTPStatus.BAD_REQUEST -
+162.142.125.54 - - [05/May/2021 01:25:12] "[37mGET / HTTP/1.1[0m" 200 -
+162.142.125.54 - - [05/May/2021 01:25:13] "[37mGET / HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 01:30:29] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 02:13:23] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 02:16:14] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 02:19:21] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 02:32:59] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 02:36:12] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 02:44:43] "[37mPOST /login HTTP/1.1[0m" 200 -
+209.17.96.42 - - [05/May/2021 03:26:45] "[37mGET / HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 03:29:37] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 03:30:13] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 03:30:38] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 03:46:18] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 03:48:15] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 03:52:17] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 03:54:01] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 03:55:08] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 03:55:57] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 04:05:08] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 04:05:48] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 04:07:49] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 04:09:44] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 04:09:47] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 04:12:31] "[37mPOST /signup HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 04:12:44] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 04:13:56] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 04:18:53] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 04:33:59] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 04:34:43] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 05:27:30] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 05:27:37] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 05:30:12] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 05:32:32] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 05:36:44] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 05:37:18] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 05:37:58] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 05:38:30] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 05:41:03] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 05:43:32] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 05:44:08] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 05:47:34] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 05:48:20] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 05:48:37] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 05:55:19] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 05:56:09] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 05:59:37] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 06:00:32] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 06:01:40] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 06:03:08] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 06:03:54] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 06:05:01] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 06:07:00] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 06:07:41] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 06:10:03] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 06:11:47] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 06:11:59] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 06:14:57] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 06:18:36] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 06:20:35] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 06:23:13] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 06:25:42] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 06:54:07] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 07:08:21] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 07:15:12] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 07:15:17] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 07:15:24] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 07:16:21] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 07:16:58] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 07:17:07] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 07:17:44] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 07:17:59] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 07:18:44] "[37mPOST /login HTTP/1.1[0m" 200 -
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+app.py:53: DeprecationWarning: count is deprecated. Use Collection.count_documents instead.
+  if USER_DB.find({'username': username, 'password': password}).count() == 0:
+121.200.5.78 - - [05/May/2021 07:51:51] "[37mPOST /login HTTP/1.1[0m" 200 -
+app.py:72: DeprecationWarning: count is deprecated. Use Collection.count_documents instead.
+  if CONTENT_DB.find({'username': username}).count() > 0:
+121.200.5.78 - - [05/May/2021 07:51:56] "[37mPOST /save HTTP/1.1[0m" 200 -
+[2021-05-05 07:52:27,855] ERROR in app: Exception on /restore [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 2112, in make_response
+    rv = jsonify(rv)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/json/__init__.py", line 370, in jsonify
+    dumps(data, indent=indent, separators=separators) + "\n",
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/json/__init__.py", line 211, in dumps
+    rv = _json.dumps(obj, **kwargs)
+  File "/usr/lib/python3/dist-packages/simplejson/__init__.py", line 385, in dumps
+    return cls(
+  File "/usr/lib/python3/dist-packages/simplejson/encoder.py", line 296, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3/dist-packages/simplejson/encoder.py", line 378, in iterencode
+    return _iterencode(o, 0)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/json/__init__.py", line 100, in default
+    return _json.JSONEncoder.default(self, o)
+  File "/usr/lib/python3/dist-packages/simplejson/encoder.py", line 272, in default
+    raise TypeError('Object of type %s is not JSON serializable' %
+TypeError: Object of type ObjectId is not JSON serializable
+121.200.5.78 - - [05/May/2021 07:52:27] "[35m[1mPOST /restore HTTP/1.1[0m" 500 -
+[2021-05-05 07:52:36,286] ERROR in app: Exception on /restore [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 2112, in make_response
+    rv = jsonify(rv)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/json/__init__.py", line 370, in jsonify
+    dumps(data, indent=indent, separators=separators) + "\n",
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/json/__init__.py", line 211, in dumps
+    rv = _json.dumps(obj, **kwargs)
+  File "/usr/lib/python3/dist-packages/simplejson/__init__.py", line 385, in dumps
+    return cls(
+  File "/usr/lib/python3/dist-packages/simplejson/encoder.py", line 296, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3/dist-packages/simplejson/encoder.py", line 378, in iterencode
+    return _iterencode(o, 0)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/json/__init__.py", line 100, in default
+    return _json.JSONEncoder.default(self, o)
+  File "/usr/lib/python3/dist-packages/simplejson/encoder.py", line 272, in default
+    raise TypeError('Object of type %s is not JSON serializable' %
+TypeError: Object of type ObjectId is not JSON serializable
+121.200.5.78 - - [05/May/2021 07:52:36] "[35m[1mPOST /restore HTTP/1.1[0m" 500 -
+[2021-05-05 07:52:37,384] ERROR in app: Exception on /restore [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 2112, in make_response
+    rv = jsonify(rv)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/json/__init__.py", line 370, in jsonify
+    dumps(data, indent=indent, separators=separators) + "\n",
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/json/__init__.py", line 211, in dumps
+    rv = _json.dumps(obj, **kwargs)
+  File "/usr/lib/python3/dist-packages/simplejson/__init__.py", line 385, in dumps
+    return cls(
+  File "/usr/lib/python3/dist-packages/simplejson/encoder.py", line 296, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3/dist-packages/simplejson/encoder.py", line 378, in iterencode
+    return _iterencode(o, 0)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/json/__init__.py", line 100, in default
+    return _json.JSONEncoder.default(self, o)
+  File "/usr/lib/python3/dist-packages/simplejson/encoder.py", line 272, in default
+    raise TypeError('Object of type %s is not JSON serializable' %
+TypeError: Object of type ObjectId is not JSON serializable
+121.200.5.78 - - [05/May/2021 07:52:37] "[35m[1mPOST /restore HTTP/1.1[0m" 500 -
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+121.200.5.78 - - [05/May/2021 08:09:38] "[37mPOST /restore HTTP/1.1[0m" 200 -
+app.py:53: DeprecationWarning: count is deprecated. Use Collection.count_documents instead.
+  if USER_DB.find({'username': username, 'password': password}).count() == 0:
+121.200.5.78 - - [05/May/2021 08:18:30] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:18:30] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:19:19] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:19:19] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:20:38] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:20:39] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:21:18] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:21:19] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:21:44] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:21:44] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:22:11] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:22:12] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:22:46] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:22:46] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:23:55] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:23:55] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:24:20] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:24:20] "[37mPOST /restore HTTP/1.1[0m" 200 -
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+121.200.5.78 - - [05/May/2021 08:29:25] "[37mPOST /restore HTTP/1.1[0m" 200 -
+app.py:53: DeprecationWarning: count is deprecated. Use Collection.count_documents instead.
+  if USER_DB.find({'username': username, 'password': password}).count() == 0:
+121.200.5.78 - - [05/May/2021 08:30:23] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:30:23] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:31:54] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:31:59] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:32:04] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:32:04] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:32:04] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:32:04] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:32:04] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:32:05] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:32:05] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:32:05] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:32:05] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:32:05] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:32:05] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:32:05] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:32:06] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:32:06] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:32:06] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:32:06] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:32:06] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:32:06] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:32:06] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:32:07] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:32:07] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:32:07] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:32:07] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:32:07] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:32:07] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:32:07] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:32:08] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:32:08] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:32:08] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:32:08] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:32:08] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:32:08] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:32:08] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:32:09] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:32:09] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:32:09] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:32:09] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:32:09] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:32:09] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:32:09] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:32:10] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:32:10] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:32:10] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:32:10] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:32:14] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:32:14] "[37mPOST /restore HTTP/1.1[0m" 200 -
+app.py:72: DeprecationWarning: count is deprecated. Use Collection.count_documents instead.
+  if CONTENT_DB.find({'username': username}).count() > 0:
+121.200.5.78 - - [05/May/2021 08:32:35] "[37mPOST /save HTTP/1.1[0m" 200 -
+[2021-05-05 08:32:35,612] ERROR in app: Exception on /restore [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 87, in restore
+    print(type(json.loads(CONTENT_DB.find_one({'username': username})['userdata'])))
+TypeError: 'NoneType' object is not subscriptable
+121.200.5.78 - - [05/May/2021 08:32:35] "[35m[1mPOST /restore HTTP/1.1[0m" 500 -
+121.200.5.78 - - [05/May/2021 08:32:39] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:32:39] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:34:39] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:34:39] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:34:50] "[37mPOST /save HTTP/1.1[0m" 200 -
+[2021-05-05 08:34:50,198] ERROR in app: Exception on /restore [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 87, in restore
+    print(type(json.loads(CONTENT_DB.find_one({'username': username})['userdata'])))
+TypeError: 'NoneType' object is not subscriptable
+121.200.5.78 - - [05/May/2021 08:34:50] "[35m[1mPOST /restore HTTP/1.1[0m" 500 -
+121.200.5.78 - - [05/May/2021 08:34:53] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:34:53] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:35:25] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:35:26] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:35:43] "[37mPOST /save HTTP/1.1[0m" 200 -
+[2021-05-05 08:35:43,293] ERROR in app: Exception on /restore [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 87, in restore
+    print(type(json.loads(CONTENT_DB.find_one({'username': username})['userdata'])))
+TypeError: 'NoneType' object is not subscriptable
+121.200.5.78 - - [05/May/2021 08:35:43] "[35m[1mPOST /restore HTTP/1.1[0m" 500 -
+121.200.5.78 - - [05/May/2021 08:35:46] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:35:46] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:35:52] "[37mPOST /save HTTP/1.1[0m" 200 -
+[2021-05-05 08:35:52,485] ERROR in app: Exception on /restore [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 87, in restore
+    print(type(json.loads(CONTENT_DB.find_one({'username': username})['userdata'])))
+TypeError: 'NoneType' object is not subscriptable
+121.200.5.78 - - [05/May/2021 08:35:52] "[35m[1mPOST /restore HTTP/1.1[0m" 500 -
+121.200.5.78 - - [05/May/2021 08:35:58] "[37mPOST /login HTTP/1.1[0m" 200 -
+[2021-05-05 08:35:58,515] ERROR in app: Exception on /restore [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 87, in restore
+    print(type(json.loads(CONTENT_DB.find_one({'username': username})['userdata'])))
+TypeError: 'NoneType' object is not subscriptable
+121.200.5.78 - - [05/May/2021 08:35:58] "[35m[1mPOST /restore HTTP/1.1[0m" 500 -
+121.200.5.78 - - [05/May/2021 08:36:15] "[37mPOST /save HTTP/1.1[0m" 200 -
+[2021-05-05 08:36:15,601] ERROR in app: Exception on /restore [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 87, in restore
+    print(type(json.loads(CONTENT_DB.find_one({'username': username})['userdata'])))
+TypeError: 'NoneType' object is not subscriptable
+121.200.5.78 - - [05/May/2021 08:36:15] "[35m[1mPOST /restore HTTP/1.1[0m" 500 -
+121.200.5.78 - - [05/May/2021 08:36:21] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:36:22] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:36:33] "[37mPOST /save HTTP/1.1[0m" 200 -
+[2021-05-05 08:36:33,232] ERROR in app: Exception on /restore [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 87, in restore
+    print(type(json.loads(CONTENT_DB.find_one({'username': username})['userdata'])))
+TypeError: 'NoneType' object is not subscriptable
+121.200.5.78 - - [05/May/2021 08:36:33] "[35m[1mPOST /restore HTTP/1.1[0m" 500 -
+121.200.5.78 - - [05/May/2021 08:36:39] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:36:39] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:37:27] "[37mPOST /save HTTP/1.1[0m" 200 -
+[2021-05-05 08:37:27,117] ERROR in app: Exception on /restore [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 87, in restore
+    print(type(json.loads(CONTENT_DB.find_one({'username': username})['userdata'])))
+TypeError: 'NoneType' object is not subscriptable
+121.200.5.78 - - [05/May/2021 08:37:27] "[35m[1mPOST /restore HTTP/1.1[0m" 500 -
+121.200.5.78 - - [05/May/2021 08:37:32] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:37:36] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:37:36] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:38:03] "[37mPOST /save HTTP/1.1[0m" 200 -
+[2021-05-05 08:38:03,075] ERROR in app: Exception on /restore [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 87, in restore
+    print(type(json.loads(CONTENT_DB.find_one({'username': username})['userdata'])))
+TypeError: 'NoneType' object is not subscriptable
+121.200.5.78 - - [05/May/2021 08:38:03] "[35m[1mPOST /restore HTTP/1.1[0m" 500 -
+121.200.5.78 - - [05/May/2021 08:38:09] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:38:09] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:38:19] "[37mPOST /save HTTP/1.1[0m" 200 -
+[2021-05-05 08:38:19,923] ERROR in app: Exception on /restore [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 87, in restore
+    print(type(json.loads(CONTENT_DB.find_one({'username': username})['userdata'])))
+TypeError: 'NoneType' object is not subscriptable
+121.200.5.78 - - [05/May/2021 08:38:19] "[35m[1mPOST /restore HTTP/1.1[0m" 500 -
+121.200.5.78 - - [05/May/2021 08:38:25] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:38:25] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:38:40] "[37mPOST /save HTTP/1.1[0m" 200 -
+[2021-05-05 08:38:40,129] ERROR in app: Exception on /restore [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 87, in restore
+    print(type(json.loads(CONTENT_DB.find_one({'username': username})['userdata'])))
+TypeError: 'NoneType' object is not subscriptable
+121.200.5.78 - - [05/May/2021 08:38:40] "[35m[1mPOST /restore HTTP/1.1[0m" 500 -
+121.200.5.78 - - [05/May/2021 08:38:52] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:38:52] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:39:29] "[37mPOST /save HTTP/1.1[0m" 200 -
+[2021-05-05 08:39:29,360] ERROR in app: Exception on /restore [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 87, in restore
+    print(type(json.loads(CONTENT_DB.find_one({'username': username})['userdata'])))
+TypeError: 'NoneType' object is not subscriptable
+121.200.5.78 - - [05/May/2021 08:39:29] "[35m[1mPOST /restore HTTP/1.1[0m" 500 -
+121.200.5.78 - - [05/May/2021 08:39:37] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:39:37] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:40:04] "[37mPOST /save HTTP/1.1[0m" 200 -
+[2021-05-05 08:40:04,906] ERROR in app: Exception on /restore [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 87, in restore
+    print(type(json.loads(CONTENT_DB.find_one({'username': username})['userdata'])))
+TypeError: 'NoneType' object is not subscriptable
+121.200.5.78 - - [05/May/2021 08:40:04] "[35m[1mPOST /restore HTTP/1.1[0m" 500 -
+121.200.5.78 - - [05/May/2021 08:40:12] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:40:12] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:40:21] "[37mPOST /save HTTP/1.1[0m" 200 -
+[2021-05-05 08:40:21,474] ERROR in app: Exception on /restore [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 87, in restore
+    print(type(json.loads(CONTENT_DB.find_one({'username': username})['userdata'])))
+TypeError: 'NoneType' object is not subscriptable
+121.200.5.78 - - [05/May/2021 08:40:21] "[35m[1mPOST /restore HTTP/1.1[0m" 500 -
+121.200.5.78 - - [05/May/2021 08:40:28] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:40:28] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:40:34] "[37mPOST /save HTTP/1.1[0m" 200 -
+[2021-05-05 08:40:34,700] ERROR in app: Exception on /restore [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 87, in restore
+    print(type(json.loads(CONTENT_DB.find_one({'username': username})['userdata'])))
+TypeError: 'NoneType' object is not subscriptable
+121.200.5.78 - - [05/May/2021 08:40:34] "[35m[1mPOST /restore HTTP/1.1[0m" 500 -
+121.200.5.78 - - [05/May/2021 08:40:40] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:40:40] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:44:05] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:44:05] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:44:41] "[37mPOST /save HTTP/1.1[0m" 200 -
+[2021-05-05 08:44:41,766] ERROR in app: Exception on /restore [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 87, in restore
+    print(type(json.loads(CONTENT_DB.find_one({'username': username})['userdata'])))
+TypeError: 'NoneType' object is not subscriptable
+121.200.5.78 - - [05/May/2021 08:44:41] "[35m[1mPOST /restore HTTP/1.1[0m" 500 -
+121.200.5.78 - - [05/May/2021 08:44:46] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:44:47] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:45:13] "[37mPOST /save HTTP/1.1[0m" 200 -
+[2021-05-05 08:45:13,958] ERROR in app: Exception on /restore [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 87, in restore
+    print(type(json.loads(CONTENT_DB.find_one({'username': username})['userdata'])))
+TypeError: 'NoneType' object is not subscriptable
+121.200.5.78 - - [05/May/2021 08:45:13] "[35m[1mPOST /restore HTTP/1.1[0m" 500 -
+121.200.5.78 - - [05/May/2021 08:45:19] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:45:19] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:45:53] "[37mPOST /save HTTP/1.1[0m" 200 -
+[2021-05-05 08:45:53,709] ERROR in app: Exception on /restore [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 87, in restore
+    print(type(json.loads(CONTENT_DB.find_one({'username': username})['userdata'])))
+TypeError: 'NoneType' object is not subscriptable
+121.200.5.78 - - [05/May/2021 08:45:53] "[35m[1mPOST /restore HTTP/1.1[0m" 500 -
+121.200.5.78 - - [05/May/2021 08:59:01] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:59:01] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 08:59:03] "[37mPOST /save HTTP/1.1[0m" 200 -
+[2021-05-05 08:59:03,553] ERROR in app: Exception on /restore [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 87, in restore
+    print(type(json.loads(CONTENT_DB.find_one({'username': username})['userdata'])))
+TypeError: 'NoneType' object is not subscriptable
+121.200.5.78 - - [05/May/2021 08:59:03] "[35m[1mPOST /restore HTTP/1.1[0m" 500 -
+121.200.5.78 - - [05/May/2021 09:01:46] "[37mPOST /login HTTP/1.1[0m" 200 -
+app.py:33: DeprecationWarning: count is deprecated. Use Collection.count_documents instead.
+  if USER_DB.find({'username': username}).count() == 0:
+121.200.5.78 - - [05/May/2021 09:02:08] "[37mPOST /signup HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 09:02:13] "[37mPOST /signup HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 09:02:23] "[37mPOST /login HTTP/1.1[0m" 200 -
+[2021-05-05 09:02:23,985] ERROR in app: Exception on /restore [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 87, in restore
+    print(type(json.loads(CONTENT_DB.find_one({'username': username})['userdata'])))
+TypeError: 'NoneType' object is not subscriptable
+121.200.5.78 - - [05/May/2021 09:02:23] "[35m[1mPOST /restore HTTP/1.1[0m" 500 -
+121.200.5.78 - - [05/May/2021 09:03:17] "[37mPOST /save HTTP/1.1[0m" 200 -
+[2021-05-05 09:03:17,873] ERROR in app: Exception on /restore [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 87, in restore
+    print(type(json.loads(CONTENT_DB.find_one({'username': username})['userdata'])))
+TypeError: 'NoneType' object is not subscriptable
+121.200.5.78 - - [05/May/2021 09:03:17] "[35m[1mPOST /restore HTTP/1.1[0m" 500 -
+121.200.5.78 - - [05/May/2021 09:03:26] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 09:03:26] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 09:04:07] "[37mPOST /save HTTP/1.1[0m" 200 -
+[2021-05-05 09:04:08,000] ERROR in app: Exception on /restore [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 87, in restore
+    print(type(json.loads(CONTENT_DB.find_one({'username': username})['userdata'])))
+TypeError: 'NoneType' object is not subscriptable
+121.200.5.78 - - [05/May/2021 09:04:08] "[35m[1mPOST /restore HTTP/1.1[0m" 500 -
+121.200.5.78 - - [05/May/2021 09:04:16] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 09:04:16] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 09:05:51] "[37mPOST /save HTTP/1.1[0m" 200 -
+[2021-05-05 09:05:51,273] ERROR in app: Exception on /restore [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 87, in restore
+    print(type(json.loads(CONTENT_DB.find_one({'username': username})['userdata'])))
+TypeError: 'NoneType' object is not subscriptable
+121.200.5.78 - - [05/May/2021 09:05:51] "[35m[1mPOST /restore HTTP/1.1[0m" 500 -
+121.200.5.78 - - [05/May/2021 09:05:58] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 09:05:58] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 09:07:01] "[37mPOST /save HTTP/1.1[0m" 200 -
+[2021-05-05 09:07:01,941] ERROR in app: Exception on /restore [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 87, in restore
+    print(type(json.loads(CONTENT_DB.find_one({'username': username})['userdata'])))
+TypeError: 'NoneType' object is not subscriptable
+121.200.5.78 - - [05/May/2021 09:07:01] "[35m[1mPOST /restore HTTP/1.1[0m" 500 -
+121.200.5.78 - - [05/May/2021 09:07:08] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 09:07:09] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 09:10:56] "[37mPOST /save HTTP/1.1[0m" 200 -
+[2021-05-05 09:10:56,034] ERROR in app: Exception on /restore [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 87, in restore
+    print(type(json.loads(CONTENT_DB.find_one({'username': username})['userdata'])))
+TypeError: 'NoneType' object is not subscriptable
+121.200.5.78 - - [05/May/2021 09:10:56] "[35m[1mPOST /restore HTTP/1.1[0m" 500 -
+121.200.5.78 - - [05/May/2021 09:11:10] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 09:11:10] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 09:11:26] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 09:11:43] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 09:11:43] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 09:45:34] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 09:45:46] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 09:45:47] "[37mPOST /restore HTTP/1.1[0m" 200 -
+1.152.16.70 - - [05/May/2021 11:31:25] "[37mPOST /login HTTP/1.1[0m" 200 -
+1.152.16.70 - - [05/May/2021 11:31:28] "[37mPOST /login HTTP/1.1[0m" 200 -
+1.152.16.70 - - [05/May/2021 11:31:28] "[37mPOST /restore HTTP/1.1[0m" 200 -
+1.152.16.70 - - [05/May/2021 11:35:01] "[37mPOST /login HTTP/1.1[0m" 200 -
+1.152.16.70 - - [05/May/2021 11:35:01] "[37mPOST /login HTTP/1.1[0m" 200 -
+1.152.16.70 - - [05/May/2021 11:35:01] "[37mPOST /restore HTTP/1.1[0m" 200 -
+1.152.16.70 - - [05/May/2021 11:36:45] "[37mPOST /save HTTP/1.1[0m" 200 -
+[2021-05-05 11:36:45,546] ERROR in app: Exception on /restore [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 87, in restore
+    print(type(json.loads(CONTENT_DB.find_one({'username': username})['userdata'])))
+TypeError: 'NoneType' object is not subscriptable
+1.152.16.70 - - [05/May/2021 11:36:45] "[35m[1mPOST /restore HTTP/1.1[0m" 500 -
+1.152.16.70 - - [05/May/2021 11:36:55] "[37mPOST /login HTTP/1.1[0m" 200 -
+1.152.16.70 - - [05/May/2021 11:36:55] "[37mPOST /restore HTTP/1.1[0m" 200 -
+1.152.16.70 - - [05/May/2021 11:42:02] "[37mPOST /login HTTP/1.1[0m" 200 -
+1.152.16.70 - - [05/May/2021 11:42:03] "[37mPOST /login HTTP/1.1[0m" 200 -
+1.152.16.70 - - [05/May/2021 11:42:17] "[37mPOST /login HTTP/1.1[0m" 200 -
+1.152.16.70 - - [05/May/2021 11:42:35] "[37mPOST /signup HTTP/1.1[0m" 200 -
+1.152.16.70 - - [05/May/2021 11:42:40] "[37mPOST /signup HTTP/1.1[0m" 200 -
+1.152.16.70 - - [05/May/2021 11:49:57] "[37mPOST /login HTTP/1.1[0m" 200 -
+1.152.16.70 - - [05/May/2021 11:49:58] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 14:16:23] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 14:16:23] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 14:16:34] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 14:16:50] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 14:16:50] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 14:17:43] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 14:17:45] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 14:18:17] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 14:18:49] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 14:20:58] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 14:20:58] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 14:25:58] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 14:25:58] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 14:27:37] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 14:27:49] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 14:27:50] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 14:28:36] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 14:28:36] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 14:33:09] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 14:33:31] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 14:33:32] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 14:33:51] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 14:34:00] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 14:34:09] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 14:34:26] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 14:34:31] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 14:34:34] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 14:34:55] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 14:34:55] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 14:35:44] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 14:35:44] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 14:37:22] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 14:38:12] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 14:38:13] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 14:38:57] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 14:39:47] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 14:41:03] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 14:41:58] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 14:41:58] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 14:42:37] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 14:42:38] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 14:42:55] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 14:42:55] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 14:43:12] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 14:44:46] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 14:44:46] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 14:50:28] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 14:51:22] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 14:51:24] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 14:51:27] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 14:51:34] "[37mPOST /save HTTP/1.1[0m" 200 -
+[2021-05-05 14:51:34,752] ERROR in app: Exception on /restore [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 87, in restore
+    print(type(json.loads(CONTENT_DB.find_one({'username': username})['userdata'])))
+TypeError: 'NoneType' object is not subscriptable
+121.200.5.78 - - [05/May/2021 14:51:34] "[35m[1mPOST /restore HTTP/1.1[0m" 500 -
+121.200.5.78 - - [05/May/2021 14:51:39] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 14:51:39] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 14:52:31] "[37mPOST /save HTTP/1.1[0m" 200 -
+[2021-05-05 14:52:31,260] ERROR in app: Exception on /restore [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 87, in restore
+    print(type(json.loads(CONTENT_DB.find_one({'username': username})['userdata'])))
+TypeError: 'NoneType' object is not subscriptable
+121.200.5.78 - - [05/May/2021 14:52:31] "[35m[1mPOST /restore HTTP/1.1[0m" 500 -
+121.200.5.78 - - [05/May/2021 14:52:40] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 14:52:40] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 14:53:51] "[37mPOST /save HTTP/1.1[0m" 200 -
+[2021-05-05 14:53:51,892] ERROR in app: Exception on /restore [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 87, in restore
+    print(type(json.loads(CONTENT_DB.find_one({'username': username})['userdata'])))
+TypeError: 'NoneType' object is not subscriptable
+121.200.5.78 - - [05/May/2021 14:53:51] "[35m[1mPOST /restore HTTP/1.1[0m" 500 -
+104.140.188.14 - - [05/May/2021 15:06:01] "[37mGET / HTTP/1.0[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:06:40] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:09:23] "[37mPOST /signup HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:10:11] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:10:11] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:11:24] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:11:30] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:11:31] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:17:54] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:17:54] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:23:11] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:23:11] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:23:57] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:24:33] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:24:43] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:25:55] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:25:55] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:26:01] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:27:39] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:27:46] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:27:46] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:28:39] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:29:41] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:29:48] "[37mPOST /save HTTP/1.1[0m" 200 -
+[2021-05-05 15:29:49,063] ERROR in app: Exception on /restore [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 87, in restore
+    print(type(json.loads(CONTENT_DB.find_one({'username': username})['userdata'])))
+TypeError: 'NoneType' object is not subscriptable
+121.200.5.78 - - [05/May/2021 15:29:49] "[35m[1mPOST /restore HTTP/1.1[0m" 500 -
+121.200.5.78 - - [05/May/2021 15:29:52] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:29:52] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:30:16] "[37mPOST /save HTTP/1.1[0m" 200 -
+[2021-05-05 15:30:16,799] ERROR in app: Exception on /restore [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 87, in restore
+    print(type(json.loads(CONTENT_DB.find_one({'username': username})['userdata'])))
+TypeError: 'NoneType' object is not subscriptable
+121.200.5.78 - - [05/May/2021 15:30:16] "[35m[1mPOST /restore HTTP/1.1[0m" 500 -
+121.200.5.78 - - [05/May/2021 15:30:19] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:30:20] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:33:09] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:33:25] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:34:00] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:34:05] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:34:07] "[37mPOST /restore HTTP/1.1[0m" 200 -
+123.115.146.131 - - [05/May/2021 15:34:09] "[37mPOST /signup HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:35:02] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:35:03] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:35:10] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:35:16] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:35:55] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:35:55] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:36:06] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:36:50] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:38:35] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:38:35] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:38:51] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:39:10] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:41:58] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:42:05] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:42:16] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:42:17] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:42:20] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:42:26] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:42:55] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:44:04] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:44:04] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:44:30] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:45:04] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:45:20] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:45:20] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:45:33] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:46:16] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:46:16] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:46:19] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:46:32] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:46:45] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:47:32] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:47:45] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:47:45] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:49:47] "[37mPOST /save HTTP/1.1[0m" 200 -
+[2021-05-05 15:49:47,331] ERROR in app: Exception on /restore [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 87, in restore
+    print(type(json.loads(CONTENT_DB.find_one({'username': username})['userdata'])))
+TypeError: 'NoneType' object is not subscriptable
+121.200.5.78 - - [05/May/2021 15:49:47] "[35m[1mPOST /restore HTTP/1.1[0m" 500 -
+121.200.5.78 - - [05/May/2021 15:50:16] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:50:16] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:53:14] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:53:15] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:53:23] "[37mPOST /save HTTP/1.1[0m" 200 -
+[2021-05-05 15:53:23,413] ERROR in app: Exception on /restore [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 87, in restore
+    print(type(json.loads(CONTENT_DB.find_one({'username': username})['userdata'])))
+TypeError: 'NoneType' object is not subscriptable
+121.200.5.78 - - [05/May/2021 15:53:23] "[35m[1mPOST /restore HTTP/1.1[0m" 500 -
+121.200.5.78 - - [05/May/2021 15:53:49] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:53:49] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:54:25] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:54:26] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:55:44] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 15:55:44] "[37mPOST /restore HTTP/1.1[0m" 200 -
+[2021-05-05 15:59:52,797] ERROR in app: Exception on /restore [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 87, in restore
+    print(type(json.loads(CONTENT_DB.find_one({'username': username})['userdata'])))
+TypeError: 'NoneType' object is not subscriptable
+121.200.5.78 - - [05/May/2021 15:59:52] "[35m[1mPOST /restore HTTP/1.1[0m" 500 -
+121.200.5.78 - - [05/May/2021 15:59:52] "[37mPOST /save HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 16:05:11] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 16:05:12] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 16:05:19] "[37mPOST /save HTTP/1.1[0m" 200 -
+[2021-05-05 16:05:19,093] ERROR in app: Exception on /restore [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 87, in restore
+    print(type(json.loads(CONTENT_DB.find_one({'username': username})['userdata'])))
+TypeError: 'NoneType' object is not subscriptable
+121.200.5.78 - - [05/May/2021 16:05:19] "[35m[1mPOST /restore HTTP/1.1[0m" 500 -
+121.200.5.78 - - [05/May/2021 16:05:24] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 16:05:24] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 16:06:17] "[37mPOST /save HTTP/1.1[0m" 200 -
+[2021-05-05 16:06:17,165] ERROR in app: Exception on /restore [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 87, in restore
+    print(type(json.loads(CONTENT_DB.find_one({'username': username})['userdata'])))
+TypeError: 'NoneType' object is not subscriptable
+121.200.5.78 - - [05/May/2021 16:06:17] "[35m[1mPOST /restore HTTP/1.1[0m" 500 -
+121.200.5.78 - - [05/May/2021 16:06:22] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 16:06:23] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 16:11:20] "[37mPOST /save HTTP/1.1[0m" 200 -
+[2021-05-05 16:11:20,822] ERROR in app: Exception on /restore [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 87, in restore
+    print(type(json.loads(CONTENT_DB.find_one({'username': username})['userdata'])))
+TypeError: 'NoneType' object is not subscriptable
+121.200.5.78 - - [05/May/2021 16:11:20] "[35m[1mPOST /restore HTTP/1.1[0m" 500 -
+121.200.5.78 - - [05/May/2021 16:11:28] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 16:11:28] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 16:14:44] "[37mPOST /save HTTP/1.1[0m" 200 -
+[2021-05-05 16:14:45,046] ERROR in app: Exception on /restore [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 87, in restore
+    print(type(json.loads(CONTENT_DB.find_one({'username': username})['userdata'])))
+TypeError: 'NoneType' object is not subscriptable
+121.200.5.78 - - [05/May/2021 16:14:45] "[35m[1mPOST /restore HTTP/1.1[0m" 500 -
+121.200.5.78 - - [05/May/2021 16:14:51] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 16:15:15] "[37mPOST /signup HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 16:15:23] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 16:15:26] "[37mPOST /login HTTP/1.1[0m" 200 -
+[2021-05-05 16:15:26,567] ERROR in app: Exception on /restore [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 87, in restore
+    print(type(json.loads(CONTENT_DB.find_one({'username': username})['userdata'])))
+TypeError: 'NoneType' object is not subscriptable
+121.200.5.78 - - [05/May/2021 16:15:26] "[35m[1mPOST /restore HTTP/1.1[0m" 500 -
+121.200.5.78 - - [05/May/2021 16:32:14] "[37mPOST /login HTTP/1.1[0m" 200 -
+[2021-05-05 16:32:14,767] ERROR in app: Exception on /restore [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 87, in restore
+    print(type(json.loads(CONTENT_DB.find_one({'username': username})['userdata'])))
+TypeError: 'NoneType' object is not subscriptable
+121.200.5.78 - - [05/May/2021 16:32:14] "[35m[1mPOST /restore HTTP/1.1[0m" 500 -
+121.200.5.78 - - [05/May/2021 16:34:51] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 16:34:51] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 16:35:04] "[37mPOST /save HTTP/1.1[0m" 200 -
+[2021-05-05 16:35:04,681] ERROR in app: Exception on /restore [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 87, in restore
+    print(type(json.loads(CONTENT_DB.find_one({'username': username})['userdata'])))
+TypeError: 'NoneType' object is not subscriptable
+121.200.5.78 - - [05/May/2021 16:35:04] "[35m[1mPOST /restore HTTP/1.1[0m" 500 -
+121.200.5.78 - - [05/May/2021 16:35:10] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 16:35:59] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 16:35:59] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 18:04:07] "[37mPOST /save HTTP/1.1[0m" 200 -
+[2021-05-05 18:04:07,237] ERROR in app: Exception on /restore [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 87, in restore
+    print(type(json.loads(CONTENT_DB.find_one({'username': username})['userdata'])))
+TypeError: 'NoneType' object is not subscriptable
+121.200.5.78 - - [05/May/2021 18:04:07] "[35m[1mPOST /restore HTTP/1.1[0m" 500 -
+121.200.5.78 - - [05/May/2021 18:04:30] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 18:04:30] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 18:15:39] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 18:15:39] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 18:16:29] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 18:17:40] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 18:17:40] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 18:17:46] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 18:17:46] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 18:17:55] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 18:17:55] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 18:22:24] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 18:23:22] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 18:23:29] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 18:23:29] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 18:24:12] "[37mPOST /save HTTP/1.1[0m" 200 -
+[2021-05-05 18:24:12,372] ERROR in app: Exception on /restore [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 87, in restore
+    print(type(json.loads(CONTENT_DB.find_one({'username': username})['userdata'])))
+TypeError: 'NoneType' object is not subscriptable
+121.200.5.78 - - [05/May/2021 18:24:12] "[35m[1mPOST /restore HTTP/1.1[0m" 500 -
+121.200.5.78 - - [05/May/2021 18:24:16] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 18:24:16] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 18:25:14] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 18:25:14] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 18:26:50] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 18:26:56] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 18:27:09] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 18:27:26] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 18:27:26] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 18:27:42] "[37mPOST /restore HTTP/1.1[0m" 200 -
+209.17.96.234 - - [05/May/2021 18:28:19] "[37mGET / HTTP/1.0[0m" 200 -
+121.200.5.78 - - [05/May/2021 18:29:54] "[37mPOST /save HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 18:30:45] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 18:30:47] "[37mPOST /save HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 18:30:53] "[37mPOST /save HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 18:32:03] "[37mPOST /save HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 18:32:27] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 18:32:40] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 18:32:40] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 18:32:43] "[37mPOST /save HTTP/1.1[0m" 200 -
+[2021-05-05 18:32:43,570] ERROR in app: Exception on /restore [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 87, in restore
+    print(type(json.loads(CONTENT_DB.find_one({'username': username})['userdata'])))
+TypeError: 'NoneType' object is not subscriptable
+121.200.5.78 - - [05/May/2021 18:32:43] "[35m[1mPOST /restore HTTP/1.1[0m" 500 -
+121.200.5.78 - - [05/May/2021 18:32:48] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 18:32:48] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 18:32:55] "[37mPOST /save HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 18:32:57] "[37mPOST /save HTTP/1.1[0m" 200 -
+[2021-05-05 18:32:57,136] ERROR in app: Exception on /restore [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 87, in restore
+    print(type(json.loads(CONTENT_DB.find_one({'username': username})['userdata'])))
+TypeError: 'NoneType' object is not subscriptable
+121.200.5.78 - - [05/May/2021 18:32:57] "[35m[1mPOST /restore HTTP/1.1[0m" 500 -
+121.200.5.78 - - [05/May/2021 18:33:00] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 18:33:00] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 18:33:12] "[37mPOST /save HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 18:33:20] "[37mPOST /save HTTP/1.1[0m" 200 -
+[2021-05-05 18:33:20,640] ERROR in app: Exception on /restore [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 87, in restore
+    print(type(json.loads(CONTENT_DB.find_one({'username': username})['userdata'])))
+TypeError: 'NoneType' object is not subscriptable
+121.200.5.78 - - [05/May/2021 18:33:20] "[35m[1mPOST /restore HTTP/1.1[0m" 500 -
+121.200.5.78 - - [05/May/2021 18:33:24] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 18:33:24] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 18:37:27] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 18:37:37] "[37mPOST /save HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 18:37:44] "[37mPOST /save HTTP/1.1[0m" 200 -
+[2021-05-05 18:37:44,752] ERROR in app: Exception on /restore [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 87, in restore
+    print(type(json.loads(CONTENT_DB.find_one({'username': username})['userdata'])))
+TypeError: 'NoneType' object is not subscriptable
+121.200.5.78 - - [05/May/2021 18:37:44] "[35m[1mPOST /restore HTTP/1.1[0m" 500 -
+121.200.5.78 - - [05/May/2021 18:37:48] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 18:37:48] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 18:40:51] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 18:40:51] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 18:42:10] "[37mPOST /save HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 18:42:14] "[37mPOST /save HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 18:42:18] "[37mPOST /save HTTP/1.1[0m" 200 -
+[2021-05-05 18:42:18,832] ERROR in app: Exception on /restore [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 87, in restore
+    print(type(json.loads(CONTENT_DB.find_one({'username': username})['userdata'])))
+TypeError: 'NoneType' object is not subscriptable
+121.200.5.78 - - [05/May/2021 18:42:18] "[35m[1mPOST /restore HTTP/1.1[0m" 500 -
+121.200.5.78 - - [05/May/2021 18:42:28] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [05/May/2021 18:42:28] "[37mPOST /restore HTTP/1.1[0m" 200 -
+111.7.96.181 - - [05/May/2021 23:48:59] code 400, message Bad request version ('\x00/\x00')
+111.7.96.181 - - [05/May/2021 23:48:59] "[35m[1m  i  eU§ärandom1random2random3random4   / [0m" HTTPStatus.BAD_REQUEST -
+111.7.96.181 - - [05/May/2021 23:49:00] code 400, message Bad request syntax ('\x16\x03\x00\x00S\x01\x00\x00O\x03\x00?G×÷º,îê²`~ó\x00ý\x82{¹Õ\x96Èw\x9bæÄÛ<=Ûoï\x10n\x00\x00(\x00\x16\x00\x13\x00')
+111.7.96.181 - - [05/May/2021 23:49:00] "[35m[1m  S  O ?G×÷º,îê²`~ó ý{¹ÕÈwæÄÛ<=Ûoïn  (   [0m" HTTPStatus.BAD_REQUEST -
+111.7.96.181 - - [05/May/2021 23:49:01] "[37mGET / HTTP/1.0[0m" 200 -
+111.7.96.181 - - [05/May/2021 23:49:01] "[37mHEAD / HTTP/1.1[0m" 200 -
+111.7.96.181 - - [05/May/2021 23:49:02] "[37mGET / HTTP/1.1[0m" 200 -
+111.7.96.181 - - [05/May/2021 23:49:02] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+111.7.96.181 - - [05/May/2021 23:49:03] "[37mHEAD / HTTP/1.1[0m" 200 -
+111.7.96.181 - - [05/May/2021 23:49:03] "[37mGET / HTTP/1.1[0m" 200 -
+111.7.96.181 - - [05/May/2021 23:49:04] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+162.142.125.128 - - [06/May/2021 00:45:01] "[37mGET / HTTP/1.1[0m" 200 -
+209.17.97.2 - - [06/May/2021 02:22:40] "[37mGET / HTTP/1.1[0m" 200 -
+121.200.5.78 - - [06/May/2021 05:23:41] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [06/May/2021 05:23:41] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [06/May/2021 05:23:49] "[37mPOST /save HTTP/1.1[0m" 200 -
+121.200.5.78 - - [06/May/2021 05:26:39] "[37mPOST /save HTTP/1.1[0m" 200 -
+121.200.5.78 - - [06/May/2021 05:27:03] "[37mPOST /save HTTP/1.1[0m" 200 -
+121.200.5.78 - - [06/May/2021 05:27:12] "[37mPOST /save HTTP/1.1[0m" 200 -
+[2021-05-06 05:27:12,991] ERROR in app: Exception on /restore [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 87, in restore
+    print(type(json.loads(CONTENT_DB.find_one({'username': username})['userdata'])))
+TypeError: 'NoneType' object is not subscriptable
+121.200.5.78 - - [06/May/2021 05:27:12] "[35m[1mPOST /restore HTTP/1.1[0m" 500 -
+121.200.5.78 - - [06/May/2021 05:27:16] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [06/May/2021 05:27:17] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [06/May/2021 05:28:17] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [06/May/2021 05:28:23] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [06/May/2021 05:30:59] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [06/May/2021 05:34:08] "[37mPOST /save HTTP/1.1[0m" 200 -
+121.200.5.78 - - [06/May/2021 05:34:37] "[37mPOST /save HTTP/1.1[0m" 200 -
+121.200.5.78 - - [06/May/2021 05:34:59] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [06/May/2021 05:35:03] "[37mPOST /save HTTP/1.1[0m" 200 -
+121.200.5.78 - - [06/May/2021 05:35:08] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [06/May/2021 05:35:09] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [06/May/2021 05:35:26] "[37mPOST /save HTTP/1.1[0m" 200 -
+121.200.5.78 - - [06/May/2021 05:35:32] "[37mPOST /save HTTP/1.1[0m" 200 -
+[2021-05-06 05:35:32,561] ERROR in app: Exception on /restore [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 87, in restore
+    print(type(json.loads(CONTENT_DB.find_one({'username': username})['userdata'])))
+TypeError: 'NoneType' object is not subscriptable
+121.200.5.78 - - [06/May/2021 05:35:32] "[35m[1mPOST /restore HTTP/1.1[0m" 500 -
+121.200.5.78 - - [06/May/2021 05:35:39] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [06/May/2021 05:35:39] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [06/May/2021 05:44:59] "[37mPOST /save HTTP/1.1[0m" 200 -
+121.200.5.78 - - [06/May/2021 07:18:45] "[37mPOST /save HTTP/1.1[0m" 200 -
+[2021-05-06 07:18:45,201] ERROR in app: Exception on /restore [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 87, in restore
+    print(type(json.loads(CONTENT_DB.find_one({'username': username})['userdata'])))
+TypeError: 'NoneType' object is not subscriptable
+121.200.5.78 - - [06/May/2021 07:18:45] "[35m[1mPOST /restore HTTP/1.1[0m" 500 -
+121.200.5.78 - - [06/May/2021 07:21:04] "[37mPOST /signup HTTP/1.1[0m" 200 -
+121.200.5.78 - - [06/May/2021 07:21:12] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [06/May/2021 07:21:17] "[37mPOST /login HTTP/1.1[0m" 200 -
+[2021-05-06 07:21:17,686] ERROR in app: Exception on /restore [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 87, in restore
+    print(type(json.loads(CONTENT_DB.find_one({'username': username})['userdata'])))
+TypeError: 'NoneType' object is not subscriptable
+121.200.5.78 - - [06/May/2021 07:21:17] "[35m[1mPOST /restore HTTP/1.1[0m" 500 -
+121.200.5.78 - - [06/May/2021 07:21:24] "[37mPOST /save HTTP/1.1[0m" 200 -
+[2021-05-06 07:21:24,957] ERROR in app: Exception on /restore [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 87, in restore
+    print(type(json.loads(CONTENT_DB.find_one({'username': username})['userdata'])))
+TypeError: 'NoneType' object is not subscriptable
+121.200.5.78 - - [06/May/2021 07:21:24] "[35m[1mPOST /restore HTTP/1.1[0m" 500 -
+121.200.5.78 - - [06/May/2021 07:21:59] "[37mPOST /signup HTTP/1.1[0m" 200 -
+121.200.5.78 - - [06/May/2021 07:30:53] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [06/May/2021 07:30:54] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [06/May/2021 07:36:46] "[37mPOST /save HTTP/1.1[0m" 200 -
+121.200.5.78 - - [06/May/2021 07:38:02] "[37mPOST /save HTTP/1.1[0m" 200 -
+121.200.5.78 - - [06/May/2021 07:38:16] "[37mPOST /save HTTP/1.1[0m" 200 -
+121.200.5.78 - - [06/May/2021 07:39:00] "[37mPOST /save HTTP/1.1[0m" 200 -
+121.200.5.78 - - [06/May/2021 08:13:56] "[37mPOST /restore HTTP/1.1[0m" 200 -
+1.136.31.210 - - [06/May/2021 08:34:11] "[37mPOST /save HTTP/1.1[0m" 200 -
+[2021-05-06 08:34:11,711] ERROR in app: Exception on /restore [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 87, in restore
+    print(type(json.loads(CONTENT_DB.find_one({'username': username})['userdata'])))
+TypeError: 'NoneType' object is not subscriptable
+1.136.31.210 - - [06/May/2021 08:34:11] "[35m[1mPOST /restore HTTP/1.1[0m" 500 -
+1.136.31.210 - - [06/May/2021 08:34:18] "[37mPOST /login HTTP/1.1[0m" 200 -
+1.136.31.210 - - [06/May/2021 08:34:19] "[37mPOST /restore HTTP/1.1[0m" 200 -
+1.136.31.210 - - [06/May/2021 08:34:26] "[37mPOST /save HTTP/1.1[0m" 200 -
+1.136.31.210 - - [06/May/2021 08:34:38] "[37mPOST /save HTTP/1.1[0m" 200 -
+162.142.125.38 - - [06/May/2021 09:20:35] code 400, message Bad request syntax ('\x16\x03\x01\x00{\x01\x00\x00w\x03\x03ï\x89~aiYy!\x11·\x10')
+162.142.125.38 - - [06/May/2021 09:20:35] "[35m[1m {  wï~aiYy!·[0m" HTTPStatus.BAD_REQUEST -
+162.142.125.38 - - [06/May/2021 09:20:36] "[37mGET / HTTP/1.1[0m" 200 -
+162.142.125.38 - - [06/May/2021 09:20:37] "[37mGET / HTTP/1.1[0m" 200 -
+128.14.209.242 - - [06/May/2021 10:35:28] "[37mGET / HTTP/1.1[0m" 200 -
+121.200.5.78 - - [06/May/2021 12:15:16] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [06/May/2021 12:15:16] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [06/May/2021 12:15:43] "[37mPOST /save HTTP/1.1[0m" 200 -
+[2021-05-06 12:15:43,296] ERROR in app: Exception on /restore [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 87, in restore
+    print(type(json.loads(CONTENT_DB.find_one({'username': username})['userdata'])))
+TypeError: 'NoneType' object is not subscriptable
+121.200.5.78 - - [06/May/2021 12:15:43] "[35m[1mPOST /restore HTTP/1.1[0m" 500 -
+121.200.5.78 - - [06/May/2021 12:15:51] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [06/May/2021 12:15:51] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [06/May/2021 12:16:03] "[37mPOST /save HTTP/1.1[0m" 200 -
+[2021-05-06 12:16:03,456] ERROR in app: Exception on /restore [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 87, in restore
+    print(type(json.loads(CONTENT_DB.find_one({'username': username})['userdata'])))
+TypeError: 'NoneType' object is not subscriptable
+121.200.5.78 - - [06/May/2021 12:16:03] "[35m[1mPOST /restore HTTP/1.1[0m" 500 -
+121.200.5.78 - - [06/May/2021 12:16:20] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [06/May/2021 12:16:21] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [06/May/2021 12:16:57] "[37mPOST /save HTTP/1.1[0m" 200 -
+121.200.5.78 - - [06/May/2021 12:17:01] "[37mPOST /save HTTP/1.1[0m" 200 -
+121.200.5.78 - - [06/May/2021 12:17:02] "[37mPOST /save HTTP/1.1[0m" 200 -
+[2021-05-06 12:17:02,313] ERROR in app: Exception on /restore [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 87, in restore
+    print(type(json.loads(CONTENT_DB.find_one({'username': username})['userdata'])))
+TypeError: 'NoneType' object is not subscriptable
+121.200.5.78 - - [06/May/2021 12:17:02] "[35m[1mPOST /restore HTTP/1.1[0m" 500 -
+121.200.5.78 - - [06/May/2021 12:17:07] "[37mPOST /login HTTP/1.1[0m" 200 -
+121.200.5.78 - - [06/May/2021 12:17:08] "[37mPOST /restore HTTP/1.1[0m" 200 -
+121.200.5.78 - - [06/May/2021 12:17:44] "[37mPOST /save HTTP/1.1[0m" 200 -
